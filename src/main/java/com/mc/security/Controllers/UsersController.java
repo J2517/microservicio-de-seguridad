@@ -23,7 +23,7 @@ import com.mc.security.Services.PasswordService;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/api/public/users")
+@RequestMapping("/api/users")
 
 public class UsersController {
 

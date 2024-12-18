@@ -16,6 +16,7 @@ public class Session {
     private String token2FA;
     private String expiration;
     private int intentosFallidos;
+    private String recaptchaToken;
 
     @DBRef
     private User user;
@@ -74,5 +75,12 @@ public class Session {
 
     public void setIntentosFallidos(int intentosFallidos) {
         this.intentosFallidos = intentosFallidos;
+    }
+    public String getRecaptchaToken() {
+        return recaptchaToken;
+    }
+
+    public void setRecaptchaToken(String recaptchaToken) {
+        this.recaptchaToken = recaptchaToken;
     }
 }
